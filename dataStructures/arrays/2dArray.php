@@ -6,12 +6,12 @@
  * Date: 26/06/17
  * @see https://www.hackerrank.com/challenges/2d-array
  */
-$handle = fopen ("php://stdin","r");
+$handle = fopen("php://stdin", "r");
 $arr = array();
-for($arr_i = 0; $arr_i < 6; $arr_i++) {
+for ($arr_i = 0; $arr_i < 6; $arr_i++) {
     $arr_temp = fgets($handle);
-    $arr[] = explode(" ",$arr_temp);
-    array_walk($arr[$arr_i],'intval');
+    $arr[] = explode(" ", $arr_temp);
+    array_walk($arr[$arr_i], 'intval');
 }
 
 $max = -999;
